@@ -20,6 +20,7 @@ import DocumentationIcon from './components/icons/IconDocumentation.vue'
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About Me</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Portofolio</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
 
@@ -56,7 +57,7 @@ import DocumentationIcon from './components/icons/IconDocumentation.vue'
                         <RouterLink to="/">Home</RouterLink>
                         <RouterLink to="/skill">Skills</RouterLink>
                         
-                        
+
                     </div>
                 </div>
             </section>
@@ -86,6 +87,40 @@ import DocumentationIcon from './components/icons/IconDocumentation.vue'
                 </div>
             </section>
             <hr class="m-0" />
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <span>Figma Design</span>
+                    <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80"
+                    aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                    80% </div>
+                  </div>
+                  <br>
+                  <span>HTML & CSS</span>
+                    <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                    aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                    90% </div>
+                  </div>
+                  <br>
+                  <span>PHP * MySQL</span>
+                    <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80"
+                    aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                    80% </div>
+                  </div>
+                  <br>
+                  <span>Laravel</span>
+                    <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                    aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                    60% </div>
+                  </div>
+                    
+                </div>
+            </section>
             <hr class="m-0" />
             <!-- Interests-->
             <section class="resume-section" id="interests">
