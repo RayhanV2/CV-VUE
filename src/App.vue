@@ -1,26 +1,30 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import ToolingIcon from './components/icons/IconTooling.vue'
+import SupportIcon from './components/icons/IconSupport.vue'
+import EcosystemIcon from './components/icons/IconEcosystem.vue'
+import DocumentationIcon from './components/icons/IconDocumentation.vue'
 </script>
 
 <template>
-  <header>
-  <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Clarence Taylor</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/fotooo2.png" alt="." /></span>
+                <span class="d-block d-lg-none">Vuee</span>
+                <span class="d-none d-lg-block">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="@/assets/fotooo2.png" alt="."/>
+                </span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Portofolio</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                    
+                    
                 </ul>
             </div>
         </nav>
@@ -36,75 +40,44 @@ import HelloWorld from './components/HelloWorld.vue'
                     <div class="subheading mb-5">
                         Front End Developer
                     </div>
-                    <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+                    <p class="lead mb-5">Saya seorang anak muda berusia 16 tahun.
+                    saya bersekolah di SMK Taruna Bhakti Depok
+                    dengan jurusan Rekayasa Perangkat Lunak.
+                    keseharian saya belajar membuat website dan
+                    mendalami role Front End dan Back End.
+                    </p>
                     <div class="social-icons">
-                        <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="social-icon" href="#!"><ToolingIcon /></a>
+                        <a class="social-icon" href="#!"><SupportIcon/></a>
+                        <a class="social-icon" href="#!"><EcosystemIcon/></a>
+                        <a class="social-icon" href="#!"><DocumentationIcon/></a>
+                        <RouterLink to="/">Home</RouterLink>
+                        <RouterLink to="/about">About</RouterLink>
                     </div>
                 </div>
             </section>
-            <hr class="m-0" />
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Senior Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">December 2011 - March 2013</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Junior Web Designer</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2010 - December 2011</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Design Intern</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2010</span></div>
-                    </div>
-                </div>
-            </section>
+
             <hr class="m-0" />
             <!-- Education-->
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
+                    <h2 class="mb-5">Portofolio</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">University of Colorado Boulder</h3>
-                            <div class="subheading mb-3">Bachelor of Science</div>
-                            <div>Computer Science - Web Development Track</div>
-                            <p>GPA: 3.23</p>
+                            <img class="gambar-portofolio" src ="@/assets/Capture.jpg"/>
+                            <img class="gambar-portofolio" src ="@/assets/Capture3.jpg"/>
+                            <div class="subheading mb-3">WORDPRESS FIGURE STORE</div>
+                            <div>Aplikasi Store menggunakan WordPress</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2006 - May 2010</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">2021</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">James Buchanan High School</h3>
-                            <div class="subheading mb-3">Technology Magnet Program</div>
-                            <p>GPA: 3.56</p>
+                            <img class="gambar-portofolio" src ="@/assets/Capture6.jpg"/>
+                            <div class="subheading mb-3">PEEKABOO ICE CREAM WEBSITE</div>
+                            <div>Silicing website ice cream dari figma ke CSS</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2002 - May 2006</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">2021</span></div>
                     </div>
                 </div>
             </section>
@@ -207,27 +180,17 @@ import HelloWorld from './components/HelloWorld.vue'
             </section>
         </div>
         <!-- Bootstrap core JS-->
-        
-    </body>
-
-    
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    
-  </header>
-
   <RouterView />
 </template>
 
 <style>
-
+.gambar-portofolio{
+  width: 500px;
+}
 @media (min-width: 1024px) {
   header {
     display: flex;
-    place-items: center;
+
     padding-right: calc(var(--section-gap) / 2);
   }
 
@@ -268,7 +231,7 @@ import HelloWorld from './components/HelloWorld.vue'
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
   --bs-red: #dc3545;
-  --bs-orange: #bd5d38;
+  --bs-orange: #293462;
   --bs-yellow: #ffc107;
   --bs-green: #198754;
   --bs-teal: #20c997;
@@ -285,7 +248,7 @@ import HelloWorld from './components/HelloWorld.vue'
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #bd5d38;
+  --bs-primary: #293462;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -489,7 +452,7 @@ sup {
 }
 
 a {
-  color: #bd5d38;
+  color: #293462;
   text-decoration: underline;
 }
 a:hover {
@@ -2758,8 +2721,8 @@ textarea.form-control-lg {
   box-shadow: 0 0 0 0.25rem rgba(189, 93, 56, 0.25);
 }
 .form-check-input:checked {
-  background-color: #bd5d38;
-  border-color: #bd5d38;
+  background-color: #293462;
+  border-color: #293462;
 }
 .form-check-input:checked[type=checkbox] {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
@@ -2768,8 +2731,8 @@ textarea.form-control-lg {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
 }
 .form-check-input[type=checkbox]:indeterminate {
-  background-color: #bd5d38;
-  border-color: #bd5d38;
+  background-color: #293462;
+  border-color: #293462;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
 }
 .form-check-input:disabled {
@@ -2846,7 +2809,7 @@ textarea.form-control-lg {
   width: 1rem;
   height: 1rem;
   margin-top: -0.25rem;
-  background-color: #bd5d38;
+  background-color: #293462;
   border: 0;
   border-radius: 1rem;
   -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2875,7 +2838,7 @@ textarea.form-control-lg {
 .form-range::-moz-range-thumb {
   width: 1rem;
   height: 1rem;
-  background-color: #bd5d38;
+  background-color: #293462;
   border: 0;
   border-radius: 1rem;
   -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -3283,8 +3246,8 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #000;
-  background-color: #bd5d38;
-  border-color: #bd5d38;
+  background-color: #293462;
+  border-color: #293462;
 }
 .btn-primary:hover {
   color: #000;
@@ -3307,8 +3270,8 @@ textarea.form-control-lg {
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #000;
-  background-color: #bd5d38;
-  border-color: #bd5d38;
+  background-color: #293462;
+  border-color: #293462;
 }
 
 .btn-secondary {
@@ -3522,27 +3485,27 @@ textarea.form-control-lg {
 }
 
 .btn-outline-primary {
-  color: #bd5d38;
-  border-color: #bd5d38;
+  color: #293462;
+  border-color: #293462;
 }
 .btn-outline-primary:hover {
   color: #000;
-  background-color: #bd5d38;
-  border-color: #bd5d38;
+  background-color: #293462;
+  border-color: #293462;
 }
 .btn-check:focus + .btn-outline-primary, .btn-outline-primary:focus {
   box-shadow: 0 0 0 0.25rem rgba(189, 93, 56, 0.5);
 }
 .btn-check:checked + .btn-outline-primary, .btn-check:active + .btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show {
   color: #000;
-  background-color: #bd5d38;
-  border-color: #bd5d38;
+  background-color: #293462;
+  border-color: #293462;
 }
 .btn-check:checked + .btn-outline-primary:focus, .btn-check:active + .btn-outline-primary:focus, .btn-outline-primary:active:focus, .btn-outline-primary.active:focus, .btn-outline-primary.dropdown-toggle.show:focus {
   box-shadow: 0 0 0 0.25rem rgba(189, 93, 56, 0.5);
 }
 .btn-outline-primary:disabled, .btn-outline-primary.disabled {
-  color: #bd5d38;
+  color: #293462;
   background-color: transparent;
 }
 
@@ -3723,7 +3686,7 @@ textarea.form-control-lg {
 
 .btn-link {
   font-weight: 400;
-  color: #bd5d38;
+  color: #293462;
   text-decoration: underline;
 }
 .btn-link:hover {
@@ -4032,7 +3995,7 @@ textarea.form-control-lg {
 .dropdown-item.active, .dropdown-item:active {
   color: #fff;
   text-decoration: none;
-  background-color: #bd5d38;
+  background-color: #293462;
 }
 .dropdown-item.disabled, .dropdown-item:disabled {
   color: #adb5bd;
@@ -4073,7 +4036,7 @@ textarea.form-control-lg {
 }
 .dropdown-menu-dark .dropdown-item.active, .dropdown-menu-dark .dropdown-item:active {
   color: #fff;
-  background-color: #bd5d38;
+  background-color: #293462;
 }
 .dropdown-menu-dark .dropdown-item.disabled, .dropdown-menu-dark .dropdown-item:disabled {
   color: #adb5bd;
@@ -4195,7 +4158,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #bd5d38;
+  color: #293462;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -4205,7 +4168,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #974a2d;
+  color: #fff;
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -4224,7 +4187,7 @@ textarea.form-control-lg {
   border-top-right-radius: 0.25rem;
 }
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-  border-color: #e9ecef #e9ecef #dee2e6;
+  border-color: #fff;
   isolation: isolate;
 }
 .nav-tabs .nav-link.disabled {
@@ -4234,7 +4197,7 @@ textarea.form-control-lg {
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
+  color: #fff;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
 }
@@ -4252,7 +4215,7 @@ textarea.form-control-lg {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #bd5d38;
+  background-color: #293462;
 }
 
 .nav-fill > .nav-link,
@@ -4288,6 +4251,8 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  height: 100vh; 
+  
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -4700,7 +4665,7 @@ textarea.form-control-lg {
   color: rgba(0, 0, 0, 0.55);
 }
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  color: rgba(0, 0, 0, 0.7);
+  color: #fff;
 }
 .navbar-light .navbar-nav .nav-link.disabled {
   color: rgba(0, 0, 0, 0.3);
@@ -4735,7 +4700,7 @@ textarea.form-control-lg {
   color: rgba(255, 255, 255, 0.55);
 }
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-  color: rgba(255, 255, 255, 0.75);
+  color: #fff;
 }
 .navbar-dark .navbar-nav .nav-link.disabled {
   color: rgba(255, 255, 255, 0.25);
@@ -5056,7 +5021,7 @@ textarea.form-control-lg {
 .page-link {
   position: relative;
   display: block;
-  color: #bd5d38;
+  color: #293462;
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #dee2e6;
@@ -5087,8 +5052,8 @@ textarea.form-control-lg {
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #bd5d38;
-  border-color: #bd5d38;
+  background-color: #293462;
+  border-color: #293462;
 }
 .page-item.disabled .page-link {
   color: #6c757d;
@@ -5284,7 +5249,7 @@ textarea.form-control-lg {
   color: #fff;
   text-align: center;
   white-space: nowrap;
-  background-color: #bd5d38;
+  background-color: #293462;
   transition: width 0.6s ease;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -5367,8 +5332,8 @@ textarea.form-control-lg {
 .list-group-item.active {
   z-index: 2;
   color: #fff;
-  background-color: #bd5d38;
-  border-color: #bd5d38;
+  background-color: #293462;
+  border-color: #293462;
 }
 .list-group-item + .list-group-item {
   border-top-width: 0;
@@ -5672,6 +5637,7 @@ textarea.form-control-lg {
           user-select: none;
   opacity: 0.25;
 }
+
 
 .btn-close-white {
   filter: invert(1) grayscale(100%) brightness(200%);
@@ -6687,7 +6653,7 @@ textarea.form-control-lg {
 }
 
 .link-primary {
-  color: #bd5d38;
+  color: #293462;
 }
 .link-primary:hover, .link-primary:focus {
   color: #ca7d60;
@@ -7140,7 +7106,7 @@ textarea.form-control-lg {
 }
 
 .border-primary {
-  border-color: #bd5d38 !important;
+  border-color: #293462 !important;
 }
 
 .border-secondary {
@@ -7970,7 +7936,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: #293462;
 }
 
 .text-secondary {
@@ -11651,7 +11617,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+  background-color: #002B5B;
 }
 
 .dev-icons {
